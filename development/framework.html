@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('./partials/framework/head.html')
+	<!-- inject:css -->
+	<!-- endinject -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/MenubarItemLinks.js"></script>
+	<script src="js/MenubarLinks.js"></script>
+	<script src="js/PopupMenuItemLinks.js"></script>
+	<script src="js/PopupMenuLinks.js"></script>
+</head>
+<body>
+	<div id="main-wrapper">
+		<div id="search-overlay-wrapper">
+			<div id="search-overlay" class="overlay">
+				<div class="container">
+					<form class="form-group" role="search">
+						<input id="global-search-input" type="search" class="search-input" placeholder="Search LUC.EDU" name="global-search" aria-labelledby="global-search-input">
+						<button id="gloabal-search-submit" type="submit">Search</button>
+					</form>
+					<span id="search-close" title="Close Overlay">×</span>
+				</div>
+			</div>
+		</div>
+		@@include('./partials/framework/sliding-menu.html')
+	<!-- HEADER -->
+	<header id="luc-header">
+		@@include('./partials/framework/header.html')
+	</header>
+	<main>
+		<aside id="social-icon-bar">
+			<article>
+				@@include('./partials/framework/social-media-bar.html')
+			</article>
+		</aside>
+		<article>
+			<!-- main content here -->
+		</article>
+		<aside>
+			<article>
+				<!-- sidebar content here -->
+			</article>
+		</aside>
+	</main>
+	<footer>
+		@@include('./partials/framework/footer.html')
+	</footer>
+	<!-- inject:js -->
+	<!-- endinject -->
+	</div>
+</body>
+</html>

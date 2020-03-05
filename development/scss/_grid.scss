@@ -1,0 +1,135 @@
+/* GRID - MAIN-CONTENT-WRAPPER */
+
+#main-content-wrapper {
+  display: grid;
+  box-sizing: border-box;
+  padding-top: 80px;
+  /* margin: 250px auto 200px; */
+  grid-template-columns: minmax(0, 3fr) 250px;
+  grid-template-areas:
+  "article aside";
+  grid-gap: 60px;
+  @include tablet-portrait {
+    grid-template-columns: minmax(0, 2fr) 250px;
+    grid-gap: 30px;
+  }
+  @include phone-landscape {
+    display: block;
+    margin: 150px auto;
+    padding-top: 50px;
+    grid-column: none;
+  }
+}
+
+#main-article-wrapper {
+  grid-area: article;
+  @include phone-landscape {
+    display: block;
+    margin: 0 0 30px;
+  }
+}
+
+#main-aside-wrapper {
+  grid-area: aside;
+  background: $gray-extra-light;
+  @include phone-landscape {
+    display: block;
+    margin: 0 0 30px;
+  }
+}
+
+/* GRID */
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 1em;
+}
+
+.grid-wrapper-no-gap {
+  grid-gap: 0px;
+}
+
+.grid-item {
+  margin: 0;
+  padding: 15px;
+  font-size: 1em;
+  font-family: 'Antenna', 'Arial', sans-serif;
+  color: #fff;
+  height: 60px;
+  background: $gray-light;
+}
+
+.col-span-1 {
+  grid-column: span 1;
+  @include tablet-landscape {
+    grid-column: span 4;
+  }
+  @include phone-landscape {
+    grid-column: span 6;
+  }
+  @include phone-portrait {
+    grid-column: span 12;
+  }
+}
+
+.col-span-2 {
+  grid-column: span 2;
+  @include tablet-landscape {
+    grid-column: span 4;
+  }
+  @include phone-landscape {
+    grid-column: span 6;
+  }
+  @include phone-portrait {
+    grid-column: span 12;
+  }
+}
+
+.col-span-3 {
+  grid-column: span 3;
+  @include tablet-landscape {
+    grid-column: span 6;
+  }
+  @include phone-portrait {
+    grid-column: span 12;
+  }
+}
+
+.col-span-4 {
+  grid-column: span 4;
+  @include tablet-portrait {
+    grid-column: span 12;
+  }
+}
+
+.col-span-6 {
+  grid-column: span 6;
+  @include phone-landscape {
+    grid-column: span 12;
+  }
+}
+
+.col-span-12 {
+  grid-column: span 12;
+}
+
+/* MAIN-WRAPPER - CONTENT - PANELS */
+
+#main-content-wrapper-full-width {
+  margin: 170px auto 200px;
+  width: 100%;
+  overflow: hidden;
+  .grid-item {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Antenna', 'Arial', sans-serif;
+    color: #272727;
+    height: auto;
+    background-color: none;
+    img {
+      margin: 0;
+    }
+  }
+}
