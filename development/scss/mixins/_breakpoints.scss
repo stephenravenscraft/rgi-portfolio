@@ -3,6 +3,8 @@ $phone-landscape-width: 736px;
 $tablet-portrait-width: 768px;
 $tablet-landscape-width: 1024px;
 $desktop-small-width: 1200px;
+$desktop-medium-width: 1600px;
+
 
 @mixin phone-portrait {
   @media (max-width: #{$phone-landscape-width - 1px}) {
@@ -30,6 +32,12 @@ $desktop-small-width: 1200px;
 
 @mixin desktop-small {
   @media (max-width: #{$desktop-small-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-medium {
+  @media (max-width: #{$desktop-medium-width}) {
     @content;
   }
 }

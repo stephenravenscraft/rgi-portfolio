@@ -34,14 +34,19 @@
 				@@include('./partials/framework/social-media-bar.html')
 			</article>
 		</aside>
-		<article>
-			<!-- main content here -->
-		</article>
-		<aside>
-			<article>
-				<!-- sidebar content here -->
+		<div id="main-content-wrapper" class="container">
+			<article id="main-article-wrapper">
+				<h3>Main <span class="antenna-light">9 columns</span></h3>
+				@@include('./partials/content-panels/content-panel-module-grid.html')
+				@@include('./partials/main-content-article.html')
 			</article>
-		</aside>
+			<aside id="main-aside-wrapper">
+				<article>
+					<h3 >Aside <span class="antenna-light">3 columns</span></h3>
+					@@include('./partials/main-content-aside.html')
+				</article>
+			</aside>
+		</div>
 	</main>
 	<footer>
 		@@include('./partials/framework/footer.html')

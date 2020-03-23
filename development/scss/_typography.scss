@@ -42,6 +42,12 @@ HEADERS =================== */
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Antenna Bold", sans-serif;
+  letter-spacing: -.015em;
+  word-spacing: .125em;
+}
+
+h1, h2 {
+  letter-spacing: -.05em;
 }
 
 p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
@@ -98,7 +104,7 @@ h6 {
 p {
 	font-size: 1.25em;
 	font-family: "myriad-pro", sans-serif;
-	line-height: 1.65em;
+	line-height: 1.45em;
 	margin: 0 0 1.25rem 0;
 }
 
@@ -405,28 +411,34 @@ NUMBERS ========================================= */
 
 .number-lg {
   h2 {
+    margin: 0 0 .25rem 0;
     font-family: "Antenna Bold", sans-serif;
     font-size: 6em;
-    margin-bottom: -.75rem;
+    line-height: 1;
   }
-  span {
+  h6, span {
     font-family: "Antenna Light", sans-serif;
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: .925em;
+    line-height: 1.35;
   }
 }
 
 .number-md {
   h2 {
+    margin: 0 0 .25rem 0;
     font-family: "Antenna Bold", sans-serif;
     font-size: 4.5em;
-    margin-bottom: -.5rem;
+    line-height: 1;
   }
-  span {
+  h6, span {
     font-family: "Antenna Light", sans-serif;
     text-transform: uppercase;
+    font-size: .925em;
+    line-height: 1.45;
   }
 }
+
 /* ===============================================
 CALENDAR ====================================== */
 
