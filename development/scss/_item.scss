@@ -1,6 +1,11 @@
 /* INTERIOR */
 
+html {
+  scroll-behavior: smooth;
+}
+
 #rgi-item {
+  margin: 0 0 170px 0;
   background: none;
   &.grid-wrapper {
     grid-gap: 2em;
@@ -14,10 +19,15 @@
 }
 
 #rgi-item-carousel-navigation {
-  grid-column: span 1;
+  grid-column: span 2;
   background: none;
+  grid-template-rows: repeat(12, 1fr);
+  position:sticky;
+  top:200px;
+  height:100vh;
   img {
     margin: 1em 0;
+    width: 100%;
   }
   img:first-of-type {
     margin-top: 0;
@@ -25,7 +35,8 @@
 }
 
 #rgi-item-carousel {
-  grid-column: span 5;
+  margin: 30px 0 0 0;
+  grid-column: span 6;
   background: none;
   img {
     margin: 2em 0;
@@ -36,8 +47,13 @@
 }
 
 #rgi-item-details {
-  grid-column: span 6;
-  background: none; }
+  grid-column: span 4;
+  background: none;
+  grid-template-rows: repeat(12, 1fr);
+  position:sticky;
+  top:200px;
+  height:100vh;
+}
 
 #rgi-item-details {
   h1, h2, h3, h4, h5, h6, p {
