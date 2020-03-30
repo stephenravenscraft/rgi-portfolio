@@ -19,12 +19,12 @@ html {
 }
 
 #rgi-item-carousel-navigation {
+  position: sticky;
   grid-column: span 2;
-  background: none;
   grid-template-rows: repeat(12, 1fr);
-  position:sticky;
   top:200px;
   height:100vh;
+  background: none;
   img {
     margin: 1em 0;
     width: 100%;
@@ -47,12 +47,12 @@ html {
 }
 
 #rgi-item-details {
-  grid-column: span 4;
-  background: none;
-  grid-template-rows: repeat(12, 1fr);
   position:sticky;
+  grid-column: span 4;
+  grid-template-rows: repeat(12, 1fr);
   top:200px;
   height:100vh;
+  background: none;
 }
 
 #rgi-item-details {
